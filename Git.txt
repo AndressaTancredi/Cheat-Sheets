@@ -8,31 +8,34 @@ git clone url.git
 # Inicializar Repo
 git init
 
-# Verificar Status do reposiótio
+# Verificar Status do reposiÃ³tio
 git status
 
 # Adicionar/Rastrear arquivos (Track files)
 git add arquivo
 git add arquivo1.ps1 arquivo2.sh
-git add . (Adiciona diretório inteiro)
+git add . (Adiciona diretÃ³rio inteiro)
 
 # Realizar commit
-git commit -m "Comentário/Descrição"
+git commit -m "ComentÃ¡rio/DescriÃ§Ã£o"
 
 # Verificar commits
 git log
 
-# Verificar mudanças
+# Verificar mudanÃ§as
 git whatchanged
-git whatchanged -p (Mostra alterações realizadas dentro dos arquivos)
+git whatchanged -p (Mostra alteraÃ§Ãµes realizadas dentro dos arquivos)
 
-# Mostra repositórios remotos configurados
+# Mostra repositÃ³rios remotos configurados
 git remote
-git remote add origin url (Origin pode ser substituído por qualquer outro nome para o repositório)
-git remote -v (Lista remotes configurados para o repositório)
+git remote add origin url (Origin pode ser substituÃ­do por qualquer outro nome para o repositÃ³rio)
+git remote -v (Lista remotes configurados para o repositÃ³rio)
 git remote rename origin novo_nome (Renomeia remote configurado)
 
-# Enviando commits para o repositório remoto
+#Remove submodulo (dois repositÃ³rios um na pasta principal e outro na subpasta)
+git rm --cashed frontend
+
+# Enviando commits para o repositÃ³rio remoto
 git push origin master (Ou substitua o origin pelo nome configurado do seu remote, master significa o branch)
 git push -u origin outro_branch (Envia o outro branch para remote e configura para "sincronizar" a branch local-remote)
 
@@ -41,21 +44,21 @@ git branch (Lista Branches)
 git branch novo_branch (Cria branch)
 git checkout branch_a_trabalhar (Troca para outro branch)
 git checkout -b branch_novo (Troca e cria nova branch)
-git branch -r (Mostra repositórios remotos)
+git branch -r (Mostra repositÃ³rios remotos)
 git branch -t nome_da_branch origin/nome_da_branch (Sincroniza branch remota com branch local)
 
-# Sincronizando informações do repositório remoto 
+# Sincronizando informaÃ§Ãµes do repositÃ³rio remoto 
 git pull
 
 # Realizando merge de branches
 git merge branch
 git rebase master branch (Aplica os commits no seu branch)
-git rebase --continue (Para continuar rebase após resolver conflitos)
+git rebase --continue (Para continuar rebase apÃ³s resolver conflitos)
 
 # Remover arquivos de um commit
 git reset HEAD arquivo.txt
-git reset ID_do_commit (remove de stage as mudanças realizadas)
-git revert ID_do_commit (remove alterações realizadas no commit selecionado)
+git reset ID_do_commit (remove de stage as mudanÃ§as realizadas)
+git revert ID_do_commit (remove alteraÃ§Ãµes realizadas no commit selecionado)
 
 # Colocando trabalho on hold
 git stash (Salva no Stash o trabalho)
@@ -65,9 +68,9 @@ git stash apply id_do_stash (Aplica stash em especifico)
 git stash drop (Limpa o ultimo item adicionado ao stash)
 git stash clear (Limpa o Stash)
 
-# Configurações do git
+# ConfiguraÃ§Ãµes do git
 ~/.gitconfig
-alias = !git option && git option (Adiciona alias com comandos do bash, necessário utilizar ! no inicio da linha)
+alias = !git option && git option (Adiciona alias com comandos do bash, necessÃ¡rio utilizar ! no inicio da linha)
 
 # Cherry pick - Aplicar apenas um commit
 git cherry-pick hash (Merge de apenas um commit na master ou outro branch)
