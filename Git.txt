@@ -34,7 +34,7 @@ git remote rename origin novo_nome (Renomeia remote configurado)
 
 #Remove 
 submodulo (dois repositórios um na pasta principal e outro na subpasta):
-git rm --cashed frontend 
+git rm --cached frontend 
 remove um remote repository 
 git remote rm (e o nome do remote (ex origin) )
 
