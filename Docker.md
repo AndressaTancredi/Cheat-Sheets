@@ -68,8 +68,22 @@ e start o container.
   docker rm id_do_container - remover o container (O container não pode estar em execução).
   docker rm -f id_do_container  - força a remoção do container
   
+ docker-compose run app rubocop spec/factories/most_wanted_transaction.rb rodar o rubocop
  
-  
+ Rodar console
+ docker-compose run app rails c
+
+ Rodar bash
+ docker-compose run app bash
+
+  ________
+    #!!most_wanted_transactions.last && most_wanted_transactions.last.active == true
+
+    #most_wanted_transactions.last.present? && most_wanted_transactions.last.active == true
+    
+    #most_wanted_transactions.last.try(:active) == true
+
+    !!most_wanted_transactions.last.try(:active)
   
   
   
