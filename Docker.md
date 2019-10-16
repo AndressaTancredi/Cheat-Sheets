@@ -45,6 +45,8 @@ e start o container.
   
   docker run -ti ubuntu /bin/bash - (-ti) para ter um terminal interativo, (/bin/bash) para ter um shell
   
+  docker-compose up --build ou docker-compose up --build --recreate (rodar)
+  
   Ctrl + d - mata meu container saindo do shell
   Ctrl + p + q - sai do container e deixa ele rodando.
   
@@ -65,6 +67,7 @@ e start o container.
   
   docker rm id_do_container - remover o container (O container não pode estar em execução).
   docker rm -f id_do_container  - força a remoção do container
+  
  
   
   
