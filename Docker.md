@@ -24,7 +24,7 @@
   
 *  Abre terminal (-ti) para ter um terminal interative e (/bin/bash) para ter um shell)
 
-  `docker run -ti ubuntu /bin/bash`
+   `docker run -ti ubuntu /bin/bash`
   
 * Roda o container
 
