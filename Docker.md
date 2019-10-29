@@ -1,32 +1,32 @@
-* Baixando e instalando o Docker
+* Baixa e instala o Docker
 
   `curl -fsSl https://get.docker.com/ | sh`
   
-* Verificar a versão
+* Verifica a versão
  
    `docker --version`
   
-* Testando (Consultou na base pra ver se existia essa imagem, SE NÂO, foi na internet fez o dowload da imagem (pull))
+* Testa (Consultou na base pra ver se existia essa imagem, SE NÂO, foi na internet fez o dowload da imagem (pull))
   
   `docker run hello-world`
   
-* Container parado
+* Vê container parado
 
   `docker images`
   
-* Ver containers em execução
+* Vê containers em execução
 
   `docker ps`
   
-* Ver todos os containers que foram parados ou finalizados
+* Vê todos os containers que foram parados ou finalizados
 
   `docker ps -a`
   
-*  Abrir terminal (-ti) para ter um terminal interative e (/bin/bash) para ter um shell)
+*  Abre terminal (-ti) para ter um terminal interative e (/bin/bash) para ter um shell)
 
   `docker run -ti ubuntu /bin/bash`
   
-* Rodar o container
+* Roda o container
 
   `docker-compose up --build` ou `docker-compose up --build --recreate`
   
@@ -34,51 +34,51 @@
   
   `Ctrl + d`
   
-* Sair do container e deixa ele rodando
+* Sai do container e deixa ele rodando
   
   `Ctrl + p + q`
   
-* Subir o container
+* Sobe o container
 
   `docker start id_do_container`
   
-* Entrar no container
+* Entra no container
 
   `docker attach id_do_container`
   
-* Criar um container
+* Cria um container
 
   `docker create nome_do_container`
   
-* Executar o container
+* Executa o container
 
   `docker run -ti nome_do_container`
   
-* Parar o container (Dar o comando fora do container)
+* Para o container (Dar o comando fora do container)
 
   `docker stop id_do_container`
   
-* Pausar o container
+* Pausa o container
 
   `docker pause id_do_container`
   
-* Despausar o container
+* Despausa o container
 
   `docker unpause id_do_container` 
   
-* Saber os recursos consumidos (memória, rede e blocos)
+* Consulta os recursos consumidos (memória, rede e blocos)
 
   `docker stats id_do_container`
   
-* Informações de procesos
+* Informa os procesos
 
   `docker top id_do_container`
   
-* Informações de log.docker
+* Informa o log.docker
 
   `docker logs id_do_container`
   
-* Remover o container (O container não pode estar em execução)
+* Remove o container (O container não pode estar em execução)
 
   `docker rm id_do_container`
   
@@ -86,15 +86,15 @@
 
   `docker rm -f id_do_container`
   
-* Rodar o Rubocop dentro do container 
+* Roda o Rubocop dentro do container 
 
   `docker-compose run app rubocop caminhoDoArquivoRb`
  
-* Rodar console rails
+* Roda console rails
 
   `docker-compose run app rails c`
 
-* Rodar bash
+* Roda bash
 
   `docker-compose run app bash`
   
