@@ -98,6 +98,11 @@
 
   `docker-compose run app bash`
   
+ * Roda teste RSPEC
+
+  `docker-compose run app caminhoDoTeste`
+  
+  
   ## O que é um Container?
   Uma emulação de sua aplicação.
 Os containers proporcionam uma maneira padrão de empacotar código, configurações e dependências de seu aplicativo em um único objeto. Eles compartilham um sistema operacional instalado no servidor e são executados como processos isolados de recursos. Isso permite fazer implantações rápidas, confiáveis e consistentes, independentemente do ambiente. Usualmente roda em uma VM.
