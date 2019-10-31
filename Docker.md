@@ -100,7 +100,8 @@
   
  * Roda teste RSPEC
 
-  `docker-compose run app rspec CaminhoDoTeste`
+  `docker-compose run app rspec CaminhoDoTeste` 
+(Caso queira não rodar o arquivo todo de teste para testar somente uma linha ou describe, coloque :NumeroDaLinha no    final do .rb)
   
   
   ## O que é um Container?
