@@ -100,7 +100,7 @@
   
  * Roda teste RSPEC
 
-  `docker-compose run app caminhoDoTeste`
+  `docker-compose run app rspec CaminhoDoTeste`
   
   
   ## O que é um Container?
