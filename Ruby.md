@@ -20,3 +20,9 @@ Referências:
 1- https://www.devmedia.com.br/introducao-a-migrations-no-ruby-on-rails/33820
 
 2- https://guides.rubyonrails.org/v3.2/migrations.html
+
+## YAML
+
+Um padrão de serialização de dados amigável para qualquer linguagem de programação.
+
+“ O YAML foi criado especificamente para funcionar bem em casos de uso comum, como: arquivos de configuração, arquivos de log, mensagens entre processos, compartilhamento de dados entre linguagens, persistência de objetos e depuração de estruturas de dados complexas. Quando os dados são fáceis de visualizar e entender, a programação se torna uma tarefa mais simples.”
