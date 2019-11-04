@@ -23,6 +23,11 @@ Referências:
 
 ## YAML
 
-Um padrão de serialização de dados amigável para qualquer linguagem de programação.
+Um padrão de serialização de dados amigável para qualquer linguagem de programação. Usado para arquivos de configuração.
 
-“ O YAML foi criado especificamente para funcionar bem em casos de uso comum, como: arquivos de configuração, arquivos de log, mensagens entre processos, compartilhamento de dados entre linguagens, persistência de objetos e depuração de estruturas de dados complexas. Quando os dados são fáceis de visualizar e entender, a programação se torna uma tarefa mais simples.”
+“ O YAML foi criado especificamente para funcionar bem em casos de uso comum, como: arquivos de configuração, arquivos 
+de log, mensagens entre processos, compartilhamento de dados entre linguagens, persistência de objetos e depuração de estruturas de dados complexas. Quando os dados são fáceis de visualizar e entender, a programação se torna uma tarefa 
+mais simples.”
+
+* A identação é muito importante no .yaml.
+* Não deixar uma linha adicional no final do arquivo como usual em outros tipos.
