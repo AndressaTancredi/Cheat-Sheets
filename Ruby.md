@@ -18,4 +18,5 @@ Rodar Migration para atualizar seu Schema e deixa-lo pareado com o banco de dado
 Referências: 
 
 1- https://www.devmedia.com.br/introducao-a-migrations-no-ruby-on-rails/33820
+
 2- https://guides.rubyonrails.org/v3.2/migrations.html
