@@ -31,3 +31,5 @@ mais simples.”
 
 * A identação é muito importante no .yaml.
 * Não deixar uma linha adicional no final do arquivo como usual em outros tipos.
+* Evitar quebrar linhas.
+
