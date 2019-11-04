@@ -13,6 +13,16 @@ Rodar Migration para atualizar seu Schema e deixa-lo pareado com o banco de dado
   
   (No git status vai mostrar o schema com modificações, dar um checkout nele e já era!)
   
+  Gerenciar conflitos: Ir para a branch e dar:
+  
+  `git merge staging`
+  
+  `git add .`
+  
+  `git commit -m "Merge with master"`
+  
+  `git push origin NomeDaBranch`
+  
 Referências: 
 
 1- https://www.devmedia.com.br/introducao-a-migrations-no-ruby-on-rails/33820
