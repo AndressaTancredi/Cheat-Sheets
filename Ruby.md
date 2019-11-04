@@ -1,4 +1,4 @@
-**Migration
+## Migration
 
 Recurso do framework Rails para escrever o código no banco de dados usando Ruby ao invés de SQL. São classes que estendem de ActiveRecord::Migration, devem estar no db/migration e podem ser geradas automaticamente usando:
 `rails generate migration NomeDaMigration`
