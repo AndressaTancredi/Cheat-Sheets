@@ -40,3 +40,19 @@ mais simples.”
 * A identação é muito importante no .yaml.
 * Não deixar uma linha adicional no final do arquivo como usual em outros tipos.
 * Evitar quebrar linhas.
+
+## VSCode
+
+ERRO: The content on disk is newer. Click on Compare to compare your version with the one on disk
+
+VS Code will show you an error message when you try to save a file that cannot be saved because it has changed on disk. VS Code blocks saving the file to prevent overwriting changes that have been made outside of the editor.
+
+In order to resolve this issue, click the Compare action in the error message to open a diff editor that will show you the contents of the file on disk (to the left) compared to the contents in VS Code (on the right): {Refer an Image}
+
+enter image description here
+
+You must either accept the changes or revert the changes. Without taking any of the mentioned actions, you cant save the file.
+
+P.S Above answer has been referred from visual studio code official documentation.
+____________________________
+
