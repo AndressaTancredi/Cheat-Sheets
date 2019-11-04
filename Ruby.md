@@ -23,6 +23,11 @@ Rodar Migration para atualizar seu Schema e deixa-lo pareado com o banco de dado
   
   `git push origin NomeDaBranch`
   
+Rodar Migration para criar campos no Schema:
+
+Cria a classe:
+
+  
 Referências: 
 
 1- https://www.devmedia.com.br/introducao-a-migrations-no-ruby-on-rails/33820
