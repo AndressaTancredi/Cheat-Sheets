@@ -5,11 +5,9 @@ Recurso do framework Rails para escrever o código no banco de dados usando Ruby
 
 Rodar Migration para atualizar seu Schema e deixa-lo pareado com o banco de dados geral.
 
-  `docker ps -a` (Pegar o ID do Container)
+  `docker ps` (Pegar o ID do Container)
   
   `docker exec -it IDdoContainer bash`
-  
-  `bin/rake db:migrate`
   
   `bin/rake db:migrate RAILS_ENV=test`
   
@@ -32,4 +30,3 @@ mais simples.”
 * A identação é muito importante no .yaml.
 * Não deixar uma linha adicional no final do arquivo como usual em outros tipos.
 * Evitar quebrar linhas.
-
