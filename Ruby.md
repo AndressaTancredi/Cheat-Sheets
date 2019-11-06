@@ -15,6 +15,8 @@ Rodar Migration para atualizar seu Schema e deixa-lo pareado com o banco de dado
   
   Gerenciar conflitos: Ir para a branch e dar:
   
+  
+  
   `git merge staging`
   
   `git add .`
