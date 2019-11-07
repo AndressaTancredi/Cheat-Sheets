@@ -73,3 +73,11 @@ Pegar o id do pod:
 Entrar no conscole:
 
 `kubectl exec -it scooby-development-5cc7854884-c62x5 bin/rails c`
+
+## Deploy Staging
+
+1- Entra no Jenkins
+2- Entra em Scooby 
+3- Entra em Build with parameters
+4- Acha sua branch
+5- Aperta build
