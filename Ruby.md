@@ -82,6 +82,6 @@ Entrar no conscole:
 
 3- Entra em Build with parameters
 
-4- Acha sua branch
+4- Procura sua branch e clica nela
 
 5- Aperta build
