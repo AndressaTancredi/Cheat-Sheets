@@ -15,7 +15,9 @@ Rodar Migration para atualizar seu Schema e deixa-lo pareado com o banco de dado
   
   Gerenciar conflitos: Ir para a branch e dar:
   
-  
+    `bin/rake db:rollback RAILS_ENV=test` `bin/rake db:rollback RAILS_ENV=development`
+    
+    `bin/rake db:migration RAILS_ENV=test` `bin/rake db:migration RAILS_ENV=development`
   
   `git merge staging`
   
@@ -63,3 +65,12 @@ You must either accept the changes or revert the changes. Without taking any of 
 P.S Above answer has been referred from visual studio code official documentation.
 ____________________________
 
+##  Console Rails
+
+Pegar o id do pod:
+
+`kubectl get pods` 
+
+Entrar no conscole:
+
+`kubectl exec -it scooby-development-5cc7854884-c62x5 bin/rails c`
