@@ -77,7 +77,11 @@ Entrar no conscole:
 ## Deploy Staging
 
 1- Entra no Jenkins
+
 2- Entra em Scooby 
+
 3- Entra em Build with parameters
+
 4- Acha sua branch
+
 5- Aperta build
