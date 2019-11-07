@@ -63,7 +63,6 @@ enter image description here
 You must either accept the changes or revert the changes. Without taking any of the mentioned actions, you cant save the file.
 
 P.S Above answer has been referred from visual studio code official documentation.
-____________________________
 
 ##  Console Rails
 
