@@ -85,3 +85,17 @@ Entrar no conscole:
 4- Procura sua branch e clica nela
 
 5- Aperta build
+
+## Log
+
+Pegar o id do pod:
+
+`kubectl get pods` 
+
+Entrar no conscole:
+
+`kubectl exec -it IdDoPodDevelopment bash`
+
+Entrar no arquivo log
+
+`tail -f log/staging.log`
