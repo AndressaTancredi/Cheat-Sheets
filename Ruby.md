@@ -74,6 +74,14 @@ Entrar no conscole:
 
 `kubectl exec -it scooby-development-5cc7854884-c62x5 bin/rails c`
 
+Caso de o erro:
+`kubectl get pods
+Unable to connect to the server: error executing access token command "/snap/google-cloud-sdk/106/bin/gcloud config config-helper --format=json": err=fork/exec /snap/google-cloud-sdk/106/bin/gcloud: no such file or directory output= stderr=`
+
+Rodar:
+`gcloud container clusters get-credentials development --zone us-central1-a --project dogherodevelopment`
+
+
 ## Deploy Staging
 
 1- Entra no Jenkins
@@ -99,10 +107,3 @@ Entrar no conscole:
 Entrar no arquivo log
 
 `tail -f log/staging.log`
-
-Caso de o erro:
-`kubectl get pods
-Unable to connect to the server: error executing access token command "/snap/google-cloud-sdk/106/bin/gcloud config config-helper --format=json": err=fork/exec /snap/google-cloud-sdk/106/bin/gcloud: no such file or directory output= stderr=`
-
-Rodar:
-`gcloud container clusters get-credentials development --zone us-central1-a --project dogherodevelopment`
