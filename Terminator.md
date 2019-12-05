@@ -13,3 +13,11 @@ Uma lista dos atalhos padrões e mais utilizados no Terminator:
     Super+g : Agrupa todos os terminais em uma aba.
     Ctrl+Shift+q : Sai do terminator, fechando todas as abas.
     Duplo clik : Renomeia a aba.
+
+## Personalizar Layout
+
+    1 - Direito do mouse na tela, entre em preferências e personalize como achar melhor.
+    2 - Vá para preferências novamente, em perfis clique em adicionar, altere o nome e salve.
+    3 - Entre na pasta  ~/.config/terminator e abra o arquivo config
+    4 - Renomeie seu layout com o nome: default e renomeie o default antigo com qualquer outro nome.
+    5 - Salve e da próxima vez que entrar no terminator, suas configurações vão aparecer.
