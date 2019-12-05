@@ -90,7 +90,7 @@
 
   `docker-compose run app rubocop caminhoDoArquivoRb`
  
-* Roda console rails
+* Roda console rails local
 
   `docker-compose run app rails c`
 
