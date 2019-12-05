@@ -14,7 +14,7 @@ Uma lista dos atalhos padrões e mais utilizados no Terminator:
     Ctrl+Shift+q : Sai do terminator, fechando todas as abas.
     Duplo clik : Renomeia a aba.
 
-## Personalizar Layout
+## Personalizar Layout Padrão
 
     1 - Direito do mouse na tela, entre em preferências e personalize como achar melhor.
     2 - Vá para preferências novamente, em perfis clique em adicionar, altere o nome e salve.
