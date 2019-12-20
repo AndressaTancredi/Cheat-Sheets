@@ -37,6 +37,8 @@ submodulo (dois repositórios um na pasta principal e outro na subpasta):
 git rm --cached frontend 
 remove um remote repository 
 git remote rm (e o nome do remote (ex origin) )
+git branch -D <nome do branch> Para apagar o branch localmente
+git push <nome do origin> <nome do branch> --delete Para apagar o branch remotamente
 
 # Enviando commits para o repositório remoto
 git push origin master (Ou substitua o origin pelo nome configurado do seu remote, master significa o branch)
