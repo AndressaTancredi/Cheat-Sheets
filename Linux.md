@@ -18,6 +18,9 @@ mv bemvindo.txt workspace/mensagem.txt
 Ler o que tem no arquivo
 cat
 
+O comando nano, serve para editar/criar arquivos texto, nessa postagem não irei falar do vim/vi, pois pretendo fazer uma postagem específica para aquele editor.
+nano
+
 Limpar a tela
 clear
 
