@@ -2,6 +2,15 @@
 
 Recurso do framework Rails para escrever o código no banco de dados usando Ruby ao invés de SQL. São classes que estendem de ActiveRecord::Migration, devem estar no db/migration e podem ser geradas automaticamente usando:
 `rails generate migration NomeDaMigration` (Dentro do Docker)
+Depois de criar uma migration, para que ela faça efetivamente as mudanças no banco de dados, é necessário executá-la. Isso é feito com a ajuda do rake usando o seguinte comando:
+	
+rake db:migrate
+
+Esse comando vai “rodar” todas as migrações que estão armazenadas no diretório db/migrate/ e que ainda não foram executadas no banco de dados. Esta execução obedece a ordem de criação dos arquivos de migração.
+
+Também é possível executar uma migração específica, para isso basta adicionar a opção VERSION no comando rake, seguido do número da migração que se deseja executar, como no exemplo a seguir:
+	
+rake db:migrate VERSION= 20151130232950
 
 Rodar Migration para atualizar seu Schema e deixa-lo pareado com o banco de dados geral.
 
