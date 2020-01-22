@@ -73,6 +73,10 @@ git stash apply id_do_stash (Aplica stash em especifico)
 git stash drop (Limpa o ultimo item adicionado ao stash)
 git stash clear (Limpa o Stash)
 
+# Organizando commits
+git reset HEAD~2 --hard (vai para trás 2 commits) APAGA
+git reset HEAD^2 --hard (vai para frente 2 commits) APAGA
+
 # Configurações do git
 ~/.gitconfig
 alias = !git option && git option (Adiciona alias com comandos do bash, necessário utilizar ! no inicio da linha)
