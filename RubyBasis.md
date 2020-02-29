@@ -153,6 +153,7 @@ helow
 
 ## DB
 Posso mudar o BD indo em config no arquivo database.yml alterando as configs.
+Posso setar usuário e senha nesse yml para o sql   username: root ||   password: "saopaulo17"
 Para saber em qual ambiente estou usando meu db:
 Quando dou um rails s ele mostra.
 Se eu quiser mudar o ambiente:
@@ -239,11 +240,55 @@ desc customers
 | updated_at | datetime(6)  | NO   |     | NULL    |                |
 +------------+--------------+------+-----+---------+----------------+
 
+Vai na local host e o crud estará pronto!
 
+#### eRuby
 
+erb imbute ruby no html (embedded ruby) <% código ruby %>
 
+Se quiser mostrar no front: <%= %>
 
+Se quiser mostrar no front e tirar a quebra de linha após o código: <%= -%>
 
+Comentário: <%#= %>
+
+#### Interpolação
+
+#{nomeDaVar ou Texto}
+
+### Models
+ 
+ActiveRecord é um framework responsável por relacionar nossas classes com nosso BD.
+
+rails console ou rails c Nesse console tenho um ambiente de todas as classes no projeto
+
+a = Customer.first  ||  a.name  ||  etc
+
+### Controllers
+
+Local para as ações no meu sistema
+
+#### Variaveis de instancia
+Com @ na frente para ficar disponível entre a controller e a view, ela está no controller.
+
+Ex:
+
+  def index
+    @customers = Customer.all
+  end
+
+### Rotas
+config/routes.rb
+
+1- rails g controller nomeDaController Vai gerar a controller e a pasta na view
+
+2- Add na pasta nomeDaController na view um arq index.html.erb com conteúdo html ou ruby
+
+3- Add   get 'inicio' => 'nomeDaController#index' (Quando bater na rota inicio vai chamar a controller welcome e a ação index)
+
+4- Acesse o localhost com a rota criada: localhost/inicio
+
+Criar uma rota raíz: add root 'welcome#index'
 
 
 
