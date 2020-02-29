@@ -32,7 +32,8 @@ a.each do |elementos|
   puts elementos
 end
 
-## Classe => Uma construção que é usada para criar instâncias (cópias) de si msm.
+## Classe 
+=> Uma construção que é usada para criar instâncias (cópias) de si msm.
 .class para saber o tipo
 Criar a classe class Pessoa
 Criar método def falar
@@ -43,7 +44,8 @@ Instanciar p = Pessoa.new
 Chamar o método p.falar
 p.class
 
-### Herança => herdar características (<) Ruby NÃO suporta herança múltipla.
+### Herança 
+=> herdar características (<) Ruby NÃO suporta herança múltipla.
 Herança múltipla é classe relogio e outra radio e criar uma classe radio relogio herdando das 
 duas ao msm tempo.  
 class Pessoa
@@ -61,7 +63,8 @@ end
 
 Além desse atleta poder correr, ele pode falar.
 
-## Módulo => coleção de métodos e constantes
+## Módulo 
+=> coleção de métodos e constantes
 
 module Configurações
   NOME_DO_SISTEMA = "Sistema da Academia"
@@ -89,7 +92,8 @@ você defina métodos cujos nomes não irão colidir com aqueles definidos em ou
 programa. Permitem que você compartilhe funcionalidade entre classes – se uma classe “mistura”
 (mixes in) um módulo (isto é, o inclui), todos os métodos de instância do módulo se tornam 
 disponíveis como se tivessem sido definidos na classe.
-Ruby NÃO suporta herança múltipla. Os módulos eliminam essa necessidade com o mixin.
+
+#### Ruby NÃO suporta herança múltipla. Os módulos eliminam essa necessidade com o mixin.
 
 módulo:
 module Configuracoes
@@ -125,7 +129,8 @@ m.enviar_correio (da classe)
 
 Com o mixin consegui acessar os métodos de um módulo e de uma classe.
 
-## Yield => passar um bloco de código dentro de uma função ou outras coisas rs
+## Yield 
+=> passar um bloco de código dentro de uma função ou outras coisas rs
 def ola
   puts "Oi oi oi"
   yield
