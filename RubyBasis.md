@@ -14,12 +14,14 @@ tryruby.org => 15min de Ruby
 gem install pry e gem install pry-require_relative
 Digita pry pra entrar no console
 
-### Array/Vetor => uma coleção ordenada.
+### Array/Vetor 
+=> uma coleção ordenada.
 Inicializar: a = [] a = Array.new a = %w(Andressa Dias Tancredi)
 Add valores: a.push(valor) Posso colocar diferentes tipos num msm array.
 Acessar valores: a[posição]
 
-### Hash => uma coleção de pares chave-valor
+### Hash 
+=> uma coleção de pares chave-valor
 Inicializar:  a = {"item1" => "1", "item2" => "2"}
 Add valores: a["item3] = 3
 Acessar valores: a["item2"]
@@ -27,7 +29,8 @@ Acessar valores: a["item2"]
 Para saber todos os métodos a. + tab
 a.size.eql?(5) = O tamanho da array é igual a 5? Vai responder true or false
 
-### Bloco (tando para array quanto pra hash)
+### Bloco 
+(tando para array quanto pra hash)
 a.each do |elementos|
   puts elementos
 end
