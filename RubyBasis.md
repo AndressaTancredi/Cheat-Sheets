@@ -219,9 +219,12 @@ Sempre cria automaticamente: t.timestamps = created_at e updated_at
 Agora vamos passar essa tabela para o MySql:
 rake db:migrate
 
-Para checar: 
+Para checar:
+
 mysql -u root
+
 use RubyBasis_development;
+
 desc customers
 
 +------------+--------------+------+-----+---------+----------------+
