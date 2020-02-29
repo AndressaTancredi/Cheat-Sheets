@@ -1,6 +1,8 @@
 gem instal rails
 
 rails new NomeDaApp
+SE quiser com o mysql
+rails new NomeDaApp --database=mysql
 
 rails server
 
@@ -150,3 +152,21 @@ Código no meio (AQUI meu yield)
 helow
 
 ## DB
+Posso mudar o BD indo em config no arquivo database.yml alterando as configs.
+Para saber em qual ambiente estou usando meu db:
+Quando dou um rails s ele mostra.
+Se eu quiser mudar o ambiente:
+rails s -e production ou test
+
+Como faço para criar os bds que aparecem no databse.yml no MySQL:
+mysql -u root
+show databases;
++--------------------+
+| Database           |
++--------------------+
+| information_schema |
+| mysql              |
+| performance_schema |
+| sys                |
++--------------------+
+
