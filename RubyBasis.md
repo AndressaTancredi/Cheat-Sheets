@@ -159,14 +159,76 @@ Se eu quiser mudar o ambiente:
 rails s -e production ou test
 
 Como faço para criar os bds que aparecem no databse.yml no MySQL:
+
 mysql -u root
+
+Mostrar dbs do MySQL:
 show databases;
+
 +--------------------+
+
 | Database           |
+
 +--------------------+
+
 | information_schema |
+
 | mysql              |
+
 | performance_schema |
+
 | sys                |
+
 +--------------------+
+
+#####Rake
+
+Saber os camandos: rake -T
+
+Criar os bds do dabase.yml sem ter que ir no Workbranch criar na mão: rake db:create
+Posso checar rodando: mysql -u root e show databases;
+
++-----------------------+
+| Database              |
++-----------------------+
+| information_schema    |
+| RubyBasis_development |
+| RubyBasis_test        |
+| mysql                 |
+| performance_schema    |
+| sys                   |
++-----------------------+
+
+##### COC Convention Over Configuration
+Convenções a serem seguidas para que o dev não se preocupe com configurações. Ex: geradores Scafold, pastas prontas, tabelas no db com campo id.
+
+##### CRUD - create(put/post), read(get), update(put,patch) e delete(delete).
+Scaffold = Andaime
+Saber os geradores existentes: rails generate ou rails g
+rails g scaffold
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
