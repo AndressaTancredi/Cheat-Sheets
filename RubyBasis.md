@@ -203,12 +203,38 @@ Posso checar rodando: mysql -u root e show databases;
 Convenções a serem seguidas para que o dev não se preocupe com configurações. Ex: geradores Scafold, pastas prontas, tabelas no db com campo id.
 
 ##### CRUD - create(put/post), read(get), update(put,patch) e delete(delete).
-Scaffold = Andaime
+
+Scaffold = Andaime Vai gerar model, view, controller e uma migrate.
+
 Saber os geradores existentes: rails generate ou rails g
-rails g scaffold
+rails g scaffold NomeQVcQuiserParaAModelDoProjeto ex: customer, pet, etc... SEMPRE no singular os modelos no Ruby e as tabelas no BD ficarão no plural, pq possui TODOS os custumers e o modelo representa um só.
 
+rails g scaffold customer name:string email:string birthday:date obs:text 
 
+#### Migrations
 
+Maneira pela qual o Ruby cria e modifica o BD.
+Sempre cria automaticamente: t.timestamps = created_at e updated_at
+
+Agora vamos passar essa tabela para o MySql:
+rake db:migrate
+
+Para checar: 
+mysql -u root
+use RubyBasis_development;
+desc customers
+
++------------+--------------+------+-----+---------+----------------+
+| Field      | Type         | Null | Key | Default | Extra          |
++------------+--------------+------+-----+---------+----------------+
+| id         | bigint(20)   | NO   | PRI | NULL    | auto_increment |
+| name       | varchar(255) | YES  |     | NULL    |                |
+| email      | varchar(255) | YES  |     | NULL    |                |
+| birthday   | date         | YES  |     | NULL    |                |
+| obs        | text         | YES  |     | NULL    |                |
+| created_at | datetime(6)  | NO   |     | NULL    |                |
+| updated_at | datetime(6)  | NO   |     | NULL    |                |
++------------+--------------+------+-----+---------+----------------+
 
 
 
