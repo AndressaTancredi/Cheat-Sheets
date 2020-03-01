@@ -269,7 +269,7 @@ a = Customer.first  ||  a.name  ||  etc
 Local para as ações no meu sistema
 
 #### Variaveis de instancia
-Com @ na frente para ficar disponível entre a controller e a view, ela está no controller.
+Com @ na frente para ficar disponível entre a controller e a view, fica no controller.
 
 Ex:
 
@@ -278,7 +278,7 @@ Ex:
   end
 
 ### Rotas
-config/routes.rb
+config/routes.rb e localhost:3000/rails/info/routes
 
 1- rails g controller nomeDaController Vai gerar a controller e a pasta na view
 
@@ -290,14 +290,61 @@ config/routes.rb
 
 Criar uma rota raíz: add root 'welcome#index'
 
+resources :customers é um atalho que o rails cria pra gerar todas as rotas.
+
+#### Helpers
+
+1 - Link_to => gera um link
+
+Coloca no html:
+
+<%= link_to "Cadastro", "/customers" %> que é a msm coisa disso: <a href="/customers">Cadastro</a> mas no rails usamos o link_to.
+Se vc olhar nesse link localhost:3000/rails/info/routes vai ver todas as rotas e o nomepath que corresponde a ela, então o certo é usar: <%= link_to "Cadastro", customers_path %>
+
+2 - Existem vários, posso pesquiser na APIDOC link na documentação lá em cima.
+Campos do html - DOM.
+
+##### Params
+
+É o que está chegando pela url ou post. é uma var global que o Rails fornece. paramns vem em hash e devemos ajustar o que estamos procurando:     
+def customer_params
+  params.require(:customer).permit(:name, :email, :birthday, :obs) Por segurança usa o permit.
+end
+def set_customer
+  @customer = Customer.find(params[:id])
+end
 
 
+#### Rest Restful
 
+Rest = Representational State Transfer, Transferência de Estado Representativo que diferente do SOAP que tinha apenas POST e GET usar o CRUD completo. Fala tb que cada recurso é unicamente direcionado através da sua URI.
+Sistemas que seguem os princípios REST são chamados de RESTFUL.
 
+#### Symbols
 
+No IRB se vc digitar "oi".object_id vai retornar um id que muda sempre, digita de novo e será outro id para a msm string. Se vc pedir o :oi.object_id vai retornar um id único que nunca vai mudar.
 
+#### Active Record
 
+Perquisando, criando e persistindo no DB.
 
+y = Customer.where(id:1)
+z = Customer.create(name: "Maria", email: "maria@gmail.com", birthday: Date.today, obs: "nada")
+w = Customer.new cria com tudo nil
+w.name = "João" etc...
+w.safe w.reload
+
+#### Filtros
+
+before_action x before_filter(não usa mais, mudou o nome para before_action)
+São métodos rodados antes ou depois de uma ação do controller.
+
+  before_action :set_customer, only: [:show, :edit, :update, :destroy]
+
+Por isso que na controller nos métodos show e edit não tem nada, pq o set_customer já faz isso.
+
+#### Partials
+Vai pra uma pag que vai renderizar em outro lugar, no caso aqui> _sua_partial.html.erb e esse aquivo pode ser compartilhado pq o código repete em vários outros locais.
 
 
 
