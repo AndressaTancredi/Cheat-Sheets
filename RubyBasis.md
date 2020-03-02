@@ -344,8 +344,33 @@ São métodos rodados antes ou depois de uma ação do controller.
 Por isso que na controller nos métodos show e edit não tem nada, pq o set_customer já faz isso.
 
 #### Partials
+
 Vai pra uma pag que vai renderizar em outro lugar, no caso aqui> _sua_partial.html.erb e esse aquivo pode ser compartilhado pq o código repete em vários outros locais.
 
+#### i18n - Internationalization (pq são 18 letras) ou Localizar
+controller: I18n.t Traduz texto e I18n.l Traduz data e hora
+view: <%= t('hello')%> ou <td><%= l(customer.birthday) %></td>
+  
+  Pegar yml para locale pronto e criar um arquivo pt-br_rails.yml
+  https://raw.githubusercontent.com/AndressaTancredi/rails-i18n/master/rails/locale/pt-BR.yml
+  Roda o servidor de novo e o Birthday estará conforme é aqui no BR.
+
+https://guides.rubyonrails.org/i18n.html
+Traduzir a página de forma simples.
+
+config/application.rb e add dentro da classe: config.i18n.default_locale = "pt-BR"
+____
+
+### Bootstrap
+Instalar a gem stylesheet caso queira cores e mais filuras
+
+Add no Genfile : gem "twitter-bootstrap-rails"
+
+Rode: rails g bootstrap:install static
+
+rails g bootstrap:layout application fluid Dá Y e já era
+
+rails g bootstrap:themed NomeDoModuloNoPlural
 
 
 
