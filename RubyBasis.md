@@ -372,8 +372,11 @@ rails g bootstrap:layout application fluid Dá Y e já era
 
 rails g bootstrap:themed NomeDoModuloNoPlural
 
+#### Composer - https://github.com/RailsApps/rails-composer
 
+É uma ferramenta externa de templates. 
 
+Rode o script: rails new nomeDaAplicação -m https://raw.github.com/RailsApps/rails-composer/master/composer.rb
 
 
 
