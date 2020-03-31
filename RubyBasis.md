@@ -288,11 +288,12 @@ config/routes.rb e localhost:3000/rails/info/routes
 
 4- Acesse o localhost com a rota criada: localhost/inicio
 
-Criar uma rota raíz: add root 'welcome#index'
+Criar uma rota raíz:  root to: 'welcome#index' (Significa o nome do controller + # + ação que eu vou chamar)
 
-resources :customers é um atalho que o rails cria pra gerar todas as rotas.
+resources :customers é um atalho que o rails cria pra gerar todas as rotas com 7 verbos. :customers é a model.
 
 #### Helpers
+Métodos prontos/ou criados por vc, que podem ser usados nas views.
 
 1 - Link_to => gera um link
 
@@ -303,6 +304,14 @@ Se vc olhar nesse link localhost:3000/rails/info/routes vai ver todas as rotas e
 
 2 - Existem vários, posso pesquiser na APIDOC link na documentação lá em cima.
 Campos do html - DOM.
+
+Ex de um helper criado:
+module ApplicationHelper
+  def data_br(data_us)
+    data_us.strftime("#d/%m/%Y")
+  end
+end
+Chama na view: data_br(Data.today)
 
 ##### Params
 
@@ -372,7 +381,7 @@ rails g bootstrap:layout application fluid Dá Y e já era
 
 rails g bootstrap:themed NomeDoModuloNoPlural
 
-#### Gerenciar versões do Rails
+#### Gerenciar versões do Ruby
 https://www.treinaweb.com.br/blog/gerenciar-versoes-do-ruby-com-rvm/
 
 
