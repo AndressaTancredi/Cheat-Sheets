@@ -23,6 +23,7 @@ git commit -m "Comentário/Descrição"
 git log
 
 # Verificar mudanças
+git show --stat COMMIT_ID (pega o id do commit com o git log)
 git whatchanged
 git whatchanged -p (Mostra alterações realizadas dentro dos arquivos)
 
