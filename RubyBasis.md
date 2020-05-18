@@ -28,6 +28,14 @@ Inicializar:  a = {"item1" => "1", "item2" => "2"}
 Add valores: a["item3] = 3
 Acessar valores: a["item2"]
 
+Array de Hashs
+def collection
+  hash = { :firstname => "Mark", :lastname => "Martin", :age => 24, :gender => "M" }
+  array = []
+  array.push(hash)
+  @collection = array[0][:firstname]
+end
+
 Para saber todos os métodos a. + tab
 a.size.eql?(5) = O tamanho da array é igual a 5? Vai responder true or false
 
