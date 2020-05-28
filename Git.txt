@@ -1,3 +1,10 @@
+# Stash nos commits
+ git log --oneline (Pega o numero do commit, geralmente o primeiro commit que fica na última posição)
+ git reset 927faf8~1 (coloca o numero do commit e ~1)
+ git add .
+ git commit -m ''
+ git push --force
+ 
 # Configurar nome/e-mail
 git config --global user.name "Seu Nome"
 git config --global user.email "Seu E-mail"
