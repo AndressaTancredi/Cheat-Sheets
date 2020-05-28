@@ -60,6 +60,7 @@ git pull
 git merge branch
 git rebase master branch (Aplica os commits no seu branch)
 git rebase --continue (Para continuar rebase após resolver conflitos)
+git push -f origin (branch ou master)
 
 # Remover arquivos de um commit
 git reset HEAD arquivo.txt
