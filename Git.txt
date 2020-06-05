@@ -5,6 +5,8 @@
  git commit -m ''
  git push --force
  
+ Desfazer git checkout reset 927faf8
+ 
 # Configurar nome/e-mail
 git config --global user.name "Seu Nome"
 git config --global user.email "Seu E-mail"
