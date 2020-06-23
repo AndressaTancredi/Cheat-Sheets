@@ -1,5 +1,24 @@
 ## Migration
 
+Vamos supor que agora precisamos adicionar o campo telefone para este cliente. No rails é uma tarefa bem simples, veja como:
+
+rails g migration AddTelefoneToCliente telefone:string
+
+
+Estrutura do comando: Add<campo>To<model> <campo><tipo>
+
+Agora basta rodar a Migração:
+
+rake db:migrate
+
+Mas seu chefe disse que agora não é mais preciso armazenar o endereço do cliente e que você precisa remover este campo. Seguimos a mesma lógica:
+
+rails g migration RemoveEnderecoFromCliente endereco:string
+
+E para executar
+
+rake db:migrate
+
 Recurso do framework Rails para escrever o código no banco de dados usando Ruby ao invés de SQL. São classes que estendem de ActiveRecord::Migration, devem estar no db/migration e podem ser geradas automaticamente usando:
 `rails generate migration NomeDaMigration` (Dentro do Docker)
 Depois de criar uma migration, para que ela faça efetivamente as mudanças no banco de dados, é necessário executá-la. Isso é feito com a ajuda do rake usando o seguinte comando:
