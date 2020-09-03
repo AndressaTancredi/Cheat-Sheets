@@ -1,6 +1,9 @@
 Saber o diretório
 pwd
 
+Confira se o seu sistema é de 32 bits ou 64 bits
+uname -m
+
 Escreve e guarda essa msg dentro de um novo arquivo
 echo "Bem Vindo" > bemvindo.txt
 
