@@ -226,3 +226,6 @@ Agora nós iremos transferir um arquivo para uma máquina remota utilizando o co
 Você pode escolher um arquivo de sua preferência para transferir. Caso queira, pode transferir o diretório workspace, criado anteriormente, ou o diretório scripts (não se esqueça de utilizar a opção -r caso escolha transferir um diretório). Para transferir um arquivo, vamos compactar um dos diretórios (lembre-se de alterar o nome do diretório caso seja necessário):
 $ zip -r work.zip workspace/
 Utilize o comando scp para copiar o arquivo para a pasta do usuário jose, que é um usuário de sua máquina. Se logue com o usuário jose e verifique se o arquivo foi copiado.
+
+Acessar servidor DeepCript
+ssh centos@3.139.4.0 -i ArquivoDaSSH(opcional)
