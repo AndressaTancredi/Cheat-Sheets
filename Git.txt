@@ -66,6 +66,8 @@ git checkout branch_a_trabalhar (Troca para outro branch)
 git checkout -b branch_novo (Troca e cria nova branch)
 git branch -r (Mostra repositórios remotos)
 git branch -t nome_da_branch origin/nome_da_branch (Sincroniza branch remota com branch local)
+git branch -m "novo-nome" (Renomeia branch local - esteja na branch a ser renomeada)
+git branch -m "nome-antigo" "novo-nome" (Renomeia um branch a partir da master)
 
 # Sincronizando informações do repositório remoto 
 git pull
