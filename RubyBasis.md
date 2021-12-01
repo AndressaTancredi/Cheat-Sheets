@@ -392,6 +392,8 @@ rails g bootstrap:themed NomeDoModuloNoPlural
 #### Gerenciar versões do Ruby
 https://www.treinaweb.com.br/blog/gerenciar-versoes-do-ruby-com-rvm/
 
+Imediatamente após instalar, desloga e loga novamente na máquina. Vai funcionar!
+
 
 
 
