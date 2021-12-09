@@ -133,3 +133,13 @@ Entrar no conscole:
 Entrar no arquivo log
 
 `tail -f log/staging.log`
+
+	
+## Kill pid
+	
+`rm CaminhoDoPID`
+	ou
+	
+`lsof -wni tcp:3000` para encontrar os pids
+	
+`kill NumeroPID`
