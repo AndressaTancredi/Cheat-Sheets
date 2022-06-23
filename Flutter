@@ -1,0 +1,10 @@
+Erro duplicate files
+
+find . -name \*\ 2.\*
+find . -name \*\ 2.\* -delete
+find . -name \*\ 3.\*
+find . -name \*\ 3.\* -delete
+flutter clean
+flutter run
+
+e remova o flutter do ICloud, ele duplica esses files.
